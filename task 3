@@ -1,0 +1,66 @@
+1)https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
+function buildFun(n){
+
+	var res = []
+
+	for (let i = 0; i< n; i++){
+		res.push(function(){
+			console.log(i)
+      return i
+		})
+	}
+	return res
+}
+
+
+2)https://www.codewars.com/kata/training-js-number-11-loop-statement-break-continue/train/javascript
+function grabDoll(dolls){
+
+  var bag=[];
+  var to_bag = ['Hello Kitty','Barbie doll'];
+  
+  for (var i=0;i<dolls.length;i++)
+  {
+  
+    if ( !to_bag.includes(dolls[i]))  continue;
+  
+    bag.push(dolls[i]);
+  
+     if (bag.length >=3) break;
+     
+   }
+   
+  return bag;
+}
+
+
+3)https://www.codewars.com/kata/training-js-number-13-number-object-and-its-properties/train/javascript
+function whatNumberIsIt(n){
+  var str = "Input number is "
+  if (n == Number.MAX_VALUE)
+  return str + "Number.MAX_VALUE"
+  
+  if (n == Number.MIN_VALUE)
+  return str + "Number.MIN_VALUE"
+  
+  if (n == NaN)
+  return str + "NaN"
+  
+  if (n == Number.NEGATIVE_INFINITY)
+  return str + "Number.NEGATIVE_INFINITY"
+  
+  if (n == Number.POSITIVE_INFINITY)
+  return str + "Number.POSITIVE_INFINITY"
+  
+  return str + n
+  
+
+  
+}
+
+
+
+4)https://www.codewars.com/kata/57238ceaef9008adc7000603
+function colorOf(r,g,b){
+  return '#' + ('0' + r.toString(16)).slice(-2) + ('0' + g.toString(16)).slice(-2) + ('0' + b.toString(16)).slice(-2);  
+}
